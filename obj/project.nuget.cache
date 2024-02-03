@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "XuOzY8/opRfkYdYvgKJzEnkLVd2KoVflPM0pYWmNH9zdDiGYiTwatjsFOQca6Dv4wuoYWECS7RZlQYTgQ1IsFA==",
+  "success": true,
+  "projectFilePath": "D:\\workspace\\vscode\\udemy-dotnet\\MeetingApp\\MeetingApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ckama\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\ckama\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\ckama\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\ckama\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
