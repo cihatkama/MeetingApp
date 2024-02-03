@@ -12,6 +12,24 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+// statik dosyaların kullanılması. wwwroot dizini altındaki css, js dosyaları dışarı açılmış olur.
+app.UseStaticFiles();
+
+// eğer wwwroot dışında farklı bir dizini statik dosya dizini olarak dışarı açmak istersek alttaki tanımı eklemeliyiz.
+
+// app.UseStaticFiles(new StaticFileOptions
+// {
+//     FileProvider = new PhysicalFileProvider(
+//            Path.Combine(builder.Environment.ContentRootPath, "MyStaticFiles")),
+//     RequestPath = "/StaticFiles"
+// });
+
+
+// yönlendirmenin aktif edilmesi
+app.UseRouting();
+
+// yukarı app nesnesini kullanan middleware lerin route yapısından önce tanıtılması gerekiyor.
+
 // default controller route kullanımı
 // app.MapDefaultControllerRoute();
 

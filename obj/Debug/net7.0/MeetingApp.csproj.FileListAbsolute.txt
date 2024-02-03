@@ -25,3 +25,6 @@ D:\workspace\vscode\udemy-dotnet\MeetingApp\obj\Debug\net7.0\MeetingApp.genrunti
 D:\workspace\vscode\udemy-dotnet\MeetingApp\obj\Debug\net7.0\ref\MeetingApp.dll
 D:\workspace\vscode\udemy-dotnet\MeetingApp\obj\Debug\net7.0\MeetingApp.RazorAssemblyInfo.cache
 D:\workspace\vscode\udemy-dotnet\MeetingApp\obj\Debug\net7.0\MeetingApp.RazorAssemblyInfo.cs
+D:\workspace\vscode\udemy-dotnet\MeetingApp\bin\Debug\net7.0\libman.json
+D:\workspace\vscode\udemy-dotnet\MeetingApp\bin\Debug\net7.0\MeetingApp.staticwebassets.runtime.json
+D:\workspace\vscode\udemy-dotnet\MeetingApp\obj\Debug\net7.0\MeetingApp.sourcelink.json
