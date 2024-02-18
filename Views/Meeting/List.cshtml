@@ -1,36 +1,34 @@
-﻿@{
-ViewBag.title = "Başvuru Listesi";
-}
+﻿@model List<UserInfo>
+    @{
+    ViewBag.title = "Başvuru Listesi";
+    }
 
-<main class="text-center">
-    <h1 class="h4">Toplantı Katılım Listesi</h1>
+    <main class="text-center">
+        <h1 class="h4">Toplantı Katılım Listesi</h1>
 
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <td>Ad</td>
-                <td>E-posta</td>
-                <td>Katılım Durumu</td>
-                <td></td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Cihat KAMA</td>
-                <td>cihatkama@gmail.com</td>
-                <td>EVET</td>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Ad</td>
+                    <td>E-posta</td>
+                    <td>Telefon</td>
+                    <td>Katılım Durumu</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                var durum = user.WillAttend == true ? "Evet" : "Hayır";
+
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Phone</td>
+                <td>@durum</td>
                 <td>
                     <a class="btn btn-primary" href="#">Detay Görüntüle</a>
                 </td>
-            </tr>
-            <tr>
-                <td>Yüksel KAMA</td>
-                <td>yuksel.erkavas@gmail.com</td>
-                <td>EVET</td>
-                <td>
-                    <a class="btn btn-primary" href="#">Detay Görüntüle</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</main>
+                }
+            </tbody>
+        </table>
+    </main>
