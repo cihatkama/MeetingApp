@@ -3,8 +3,27 @@ ViewBag.title = "Başvuru Formu";
 Layout = "_Layout2";
 }
 
-<h1>Toplantı Katılım Formu</h1>
-<form action="">
+<h1 class="text-center">Toplantı Katılım Formu</h1>
+<form method="post">
+    <div class="mb-3">
+        <label for="Name" class="form-label">İsim Soyisim</label>
+        <input type="text" name="Name" id="Name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="form-label">E-Posta Adresi</label>
+        <input type="email" name="Email" id="Email" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="Phone" class="form-label">Telefon Numarası</label>
+        <input type="text" name="Phone" id="Phone" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="form-label">Katılım Durumu</label>
+        <select name="WillAttend" id="WillAttend" class="form-select">
+            <option value="true">Katılıyorum.</option>
+            <option value="false">Katılamıyorum.</option>
+        </select>
+    </div>
     <button class="btn btn-primary" type="submit">Kaydet</button>
 
 </form>
