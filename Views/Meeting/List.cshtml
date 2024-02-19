@@ -1,6 +1,7 @@
 ﻿@model List<UserInfo>
     @{
     ViewBag.title = "Başvuru Listesi";
+    Layout = "_Layout";
     }
 
     <main class="text-center">
@@ -20,15 +21,18 @@
                 @foreach (var user in Model)
                 {
                 var durum = user.WillAttend == true ? "Evet" : "Hayır";
-
-                <td>@user.Name</td>
-                <td>@user.Email</td>
-                <td>@user.Phone</td>
-                <td>@durum</td>
-                <td>
-                    <a class="btn btn-primary" href="#">Detay Görüntüle</a>
-                </td>
+                var className = user.WillAttend == true ? "table-success" : "table-danger";
+                <tr class="@className">
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>@user.Phone</td>
+                    <td>@user.WillAttend</td>
+                    <td>
+                        <a class="btn btn-primary" href="#">Detay Görüntüle</a>
+                    </td>
+                </tr>
                 }
+
             </tbody>
         </table>
     </main>

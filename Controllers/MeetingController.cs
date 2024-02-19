@@ -30,7 +30,8 @@ namespace MeetingApp.Controllers
 
         public IActionResult List()
         {
-            return View();
+            var users = Repository.Users;
+            return View(users);
         }
     }
 }
