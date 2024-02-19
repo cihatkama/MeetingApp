@@ -33,5 +33,11 @@ namespace MeetingApp.Controllers
             var users = Repository.Users;
             return View(users);
         }
+
+        [HttpGet]   // yazmasak da HttpGet
+        public IActionResult Details(int id)
+        {
+            return View(Repository.GetById(id));
+        }
     }
 }

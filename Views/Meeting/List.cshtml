@@ -18,10 +18,15 @@
                 </tr>
             </thead>
             <tbody>
+                @{ int totalParticipants = 0; }
                 @foreach (var user in Model)
                 {
                 var durum = user.WillAttend == true ? "Evet" : "Hayır";
                 var className = user.WillAttend == true ? "table-success" : "table-danger";
+
+                if (user.WillAttend)
+                totalParticipants++;
+
                 <tr class="@className">
                     <td>@user.Name</td>
                     <td>@user.Email</td>
@@ -35,4 +40,9 @@
 
             </tbody>
         </table>
+        <div class="card">
+            <div class="card-body">
+                <span>Katılımcı Sayısı: @totalParticipants</span>
+            </div>
+        </div>
     </main>
