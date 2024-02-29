@@ -23,9 +23,16 @@ namespace MeetingApp.Controllers
             // Console.WriteLine(model.Name + " - " + model.Email + " - " + model.Phone + " - " + model.WillAttend.ToString());
 
             // Veri tabanı aksiyonları yönetimi burada yapılabilir. DB işlemleri yapılana kadar statik liste ile ile çalışılacak.
-            Repository.CreateUser(model);
-            ViewBag.UserCount = Repository.Users.Where(m => m.WillAttend == true).Count();
-            return View("Thanks", model);
+            if (ModelState.IsValid)
+            {
+                Repository.CreateUser(model);
+                ViewBag.UserCount = Repository.Users.Where(m => m.WillAttend == true).Count();
+                return View("Thanks", model);
+            }
+            else
+            {
+                return View(model);
+            }
         }
 
         public IActionResult List()
