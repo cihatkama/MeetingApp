@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\workspace\\vscode\\udemy-dotnet\\MeetingApp\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "D:\\workspace\\vscode\\udemy-dotnet\\MeetingApp\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },
